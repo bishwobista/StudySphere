@@ -5,9 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Contact extends Model
+class CollegeImage extends Model
 {
     use HasFactory;
-    protected $table="contact";
-    protected $fillable=['id', 'email', 'message', 'status'];
+    protected $fillable = [
+        'id', 
+        'college_id',
+        'path',
+    ];
 }
